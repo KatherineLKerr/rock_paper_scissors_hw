@@ -6,7 +6,7 @@ also_reload('./models')
 
 get '/game/:choice1/:choice2' do
   game = Game.new(params[:choice1], params[:choice2])
-  @winner = game.rock_paper_scissors
+  @winner = game.game
   erb(:result)
 end
 

@@ -7,17 +7,17 @@ class Game
 
   def game
     if (@choice1 == 'rock') && (@choice2 == 'scissors')
-      return 'rock'
+      return 'Player 1 wins with rock!'
     elsif (@choice1 == 'rock') && (@choice2 == 'paper')
-      return 'paper'
+      return 'Player 2 wins with paper!'
     elsif (@choice1 == 'paper') && (@choice2 == 'scissors')
-      return 'scissors'
+      return 'Player 2 wins with scissors!'
     elsif (@choice1 == 'scissors') && (@choice2 == 'rock')
-      return 'rock'
+      return 'Player 2 wins with rock!'
     elsif (@choice1 == 'paper') && (@choice2 == 'rock')
-      return 'paper'
-    elsif (@choice1 == 'paper') && (@choice2 == 'scissors')
-      return 'scissors'
+      return 'Player 1 wins with paper!'
+    elsif (@choice1 == 'scissors') && (@choice2 == 'paper')
+      return 'Player 1 wins with scissors!'
     end
   end
 
